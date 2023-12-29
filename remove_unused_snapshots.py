@@ -6,6 +6,10 @@ give this lambda a role to perform * on EBS
 import boto3
 from datetime import datetime,timedelta
 
+''' 
+List out all snapshot, filter the stale snapshot and delete snapshot
+'''
+
 def lambda_handler(event,context):
     ec2= boto3.client('ec2')
     
@@ -54,7 +58,4 @@ def lambda_handler(event,context):
 
 
 
-''' 
-List out all snapshot, filter the stale snapshot and delete snapshot
-'''
-def
+
